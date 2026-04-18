@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Poppins", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-background: hsl(240 10% 3.9%);
+  --color-foreground: hsl(0 0% 98%);
+
+  --color-card: hsl(240 10% 3.9%);
+  --color-card-foreground: hsl(0 0% 98%);
+
+  --color-popover: hsl(240 10% 3.9%);
+  --color-popover-foreground: hsl(0 0% 98%);
+
+  --color-primary: hsl(45 91% 57%); /* Maize Yellow #F4C430 approx */
+  --color-maize: hsl(45 91% 57%);
+  --color-primary-foreground: hsl(240 10% 3.9%);
+
+  --color-secondary: hsl(106 52% 23%); /* Dark Green #2E5A1C approx */
+  --color-harvest: hsl(106 52% 23%);
+  --color-secondary-foreground: hsl(0 0% 98%);
+
+  --color-muted: hsl(240 3.7% 15.9%);
+  --color-muted-foreground: hsl(240 5% 64.9%);
+
+  --color-accent: hsl(25 61% 35%); /* Obsidian Bronze/Brown */
+  --color-accent-foreground: hsl(0 0% 98%);
+
+  --color-destructive: hsl(0 84.2% 60.2%);
+  --color-destructive-foreground: hsl(0 0% 98%);
+
+  --color-border: hsl(240 3.7% 15.9%);
+  --color-input: hsl(240 3.7% 15.9%);
+  --color-ring: hsl(45 91% 57%);
+
+  --radius-xl: 2rem;
+  --radius-lg: 1.5rem;
+  --radius-md: 1rem;
+  --radius-sm: 0.5rem;
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+@utility bg-gradient-brand {
+  background: linear-gradient(135deg, #F4C430 0%, #D4A710 100%);
+}
+
+@utility bg-gradient-harvest {
+  background: linear-gradient(135deg, #2E5A1C 0%, #1A3A0F 100%);
+}
+
+@utility glass {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@utility glass-thick {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(40px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@utility apple-shadow {
+  box-shadow: 
+    0 10px 30px -5px rgba(26, 58, 15, 0.08),
+    0 20px 40px -10px rgba(0, 0, 0, 0.04);
+}
+
+@utility secondary-text {
+  @apply text-[#1D1D1F]/85 font-medium tracking-tight font-sans;
+  font-size: 1.125rem;
+}
+
+@utility label-caps {
+  @apply text-[13px] font-bold text-[#1D1D1F]/75;
+}
+
+@utility section-label {
+  @apply inline-flex items-center px-4 py-1.5 rounded-full border border-harvest/20 bg-harvest/10 text-[12px] font-bold text-harvest;
+}
+
+@utility grain-overlay {
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  filter: contrast(150%) brightness(100%);
+  opacity: 0.03;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-[#1D1D1F] font-sans antialiased selection:bg-harvest/10 selection:text-harvest;
+    font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1, "cv11" 1;
+    letter-spacing: -0.015em;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tighter font-black font-display;
+    letter-spacing: -0.05em;
+    line-height: 1.05;
+  }
+}
+
+.dark {
+  --color-background: 240 10% 3.9%;
+  --color-foreground: 0 0% 98%;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
