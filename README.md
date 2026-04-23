@@ -5,15 +5,12 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
-**AI-Powered Agricultural Platform for Zimbabwean Farmers & Traders**
+**Agricultural Platform for Zimbabwean Farmers & Traders**
 
-MaizeConnect leverages Google's Gemini AI to generate professional agricultural blueprints, harvest strategies, market analysis, and logistics plans tailored for Zimbabwe's maize ecosystem. From field planning to USSD-integrated trade protocols.
+MaizeConnect - from field planning to USSD-integrated trade protocols.
 
 ## Features
 
-- **AI Blueprint Generation** – Gemini-powered strategies for harvest, markets, risks
-- **Farmer Dashboard** – Blueprints, Compose, Inbox, Analytics (Recharts)
-- **Secure Auth** – Login/Register with React Hook Form + Zod
 - **Premium UI/UX** – shadcn/ui, Tailwind 4, Lucide icons, Sonner toasts
 - **Responsive Design** – Mobile-first, Apple HIG compliant
 - **Zimbabwe Focus** – Weather risks, local economics, MaizeConnect protocols
@@ -22,7 +19,7 @@ MaizeConnect leverages Google's Gemini AI to generate professional agricultural 
 
 | Frontend   | Backend/AI             | Utils          |
 | ---------- | ---------------------- | -------------- |
-| React 19   | Google Gemini AI       | shadcn/ui      |
+| React 19   | Python FastAPI      | shadcn/ui      |
 | Vite 6     | @google/genai          | Tailwind CSS 4 |
 | TypeScript | React Router           | Recharts       |
 | SWR        | Express (server-ready) | Zod Validation |
@@ -60,13 +57,8 @@ npm run preview
 | ----------------------- | ------------------ |
 | `/`                     | Landing Page       |
 | `/about`                | About MaizeConnect |
-| `/login`                | User Login         |
-| `/register`             | Sign Up            |
 | `/dashboard`            | Home               |
-| `/dashboard/blueprints` | AI Strategies      |
-| `/dashboard/compose`    | Create Blueprint   |
-| `/dashboard/inbox`      | Messages           |
-| `/dashboard/settings`   | Profile            |
+
 
 ## Contributing
 
