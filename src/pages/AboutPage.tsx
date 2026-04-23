@@ -51,7 +51,6 @@ export default function AboutPage() {
             src="https://picsum.photos/seed/agricultural_innovation/1920/1080"
             alt=""
             className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#F2F7F2] to-white" />
         </div>
@@ -131,7 +130,6 @@ export default function AboutPage() {
                     src="https://images.unsplash.com/photo-1594488310342-99889419207e?auto=format&fit=crop&q=80&w=2000" 
                     alt="Zimbabwean Farm Worker" 
                     className="w-full h-full object-cover mix-blend-multiply opacity-80"
-                    referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-harvest/40 to-transparent" />
                 
@@ -159,7 +157,6 @@ export default function AboutPage() {
             src="https://picsum.photos/seed/harvest_texture/1920/1080"
             alt=""
             className="w-full h-full object-cover grayscale brightness-50"
-            referrerPolicy="no-referrer"
           />
         </div>
         <div className="max-w-[1400px] mx-auto relative z-10">
@@ -217,7 +214,6 @@ export default function AboutPage() {
             src="https://picsum.photos/seed/circuit_pattern/1920/1080"
             alt=""
             className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
           />
         </div>
         <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center relative z-10">
@@ -294,7 +290,6 @@ export default function AboutPage() {
                     src="https://images.unsplash.com/photo-1595113316349-9fa4ee24f884?auto=format&fit=crop&q=80&w=2000" 
                     alt="Zimbabwe Harvest" 
                     className="w-full h-full object-cover opacity-80"
-                    referrerPolicy="no-referrer"
                  />
                  <div className="absolute inset-x-4 bottom-4 sm:inset-x-6 sm:bottom-6 md:inset-x-8 md:bottom-8 lg:inset-x-10 lg:bottom-10 p-4 sm:p-6 md:p-8 lg:p-10 bg-white/80 backdrop-blur-3xl rounded-2xl lg:rounded-[3rem] shadow-2xl border border-white/40">
                     <span className="text-[12px] font-bold text-harvest block mb-2">Platform coverage</span>

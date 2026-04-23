@@ -63,7 +63,6 @@ export default function LoginPage() {
             src="https://picsum.photos/seed/maize_growth/1080/1920" 
             alt="Agricultural Trade" 
             className="w-full h-full object-cover filter grayscale contrast-125 brightness-50"
-            referrerPolicy="no-referrer"
           />
         </motion.div>
         

@@ -21,6 +21,7 @@ import { cn } from '@/lib/utils';
 export default function LandingPage() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [lang, setLang] = useState<'EN' | 'SN'>('EN');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
     { name: lang === 'EN' ? 'How it works' : 'Zvinoshanda sei', href: '#how' },
@@ -135,7 +136,6 @@ export default function LandingPage() {
             src="https://picsum.photos/seed/maize_farm_sunlight/1920/1080"
             alt=""
             className="w-full h-full object-cover opacity-[0.15] scale-105"
-            referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white" />
         </div>
@@ -211,7 +211,6 @@ export default function LandingPage() {
                 src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&q=80&w=2000" 
                 alt="Agricultural Landscape" 
                 className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
               
@@ -249,7 +248,6 @@ export default function LandingPage() {
             src="https://picsum.photos/seed/grain_macro/1920/1080?blur=10"
             alt=""
             className="w-full h-full object-cover opacity-[0.13] grayscale"
-            referrerPolicy="no-referrer"
           />
         </div>
         <div className="absolute top-0 left-0 w-full h-[600px] bg-gradient-to-b from-[#EBF2EA] to-transparent z-1" />
@@ -405,7 +403,6 @@ export default function LandingPage() {
                         src="https://images.unsplash.com/photo-1595113316349-9fa4ee24f884?auto=format&fit=crop&q=80&w=2000" 
                         alt="Zimbabwe Farm" 
                         className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-[8s]"
-                        referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-gradient-to-tr from-harvest/20 to-transparent" />
                     
@@ -449,7 +446,6 @@ export default function LandingPage() {
             src="https://picsum.photos/seed/rural_zimbabwe/1920/1080"
             alt=""
             className="w-full h-full object-cover opacity-[0.13] mix-blend-overlay"
-            referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#E9F0E8] via-transparent to-[#E9F0E8]" />
         </div>

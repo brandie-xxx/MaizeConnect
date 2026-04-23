@@ -121,7 +121,6 @@ export default function RegisterPage() {
             src="https://picsum.photos/seed/maize_basket/1080/1920" 
             alt="Maize Connect" 
             className="w-full h-full object-cover filter grayscale contrast-125 brightness-50"
-            referrerPolicy="no-referrer"
           />
         </motion.div>
         
